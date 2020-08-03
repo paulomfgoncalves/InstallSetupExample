@@ -1,17 +1,21 @@
 
-echo COMMIT APP
+
+echo OFF
+echo APP COMMIT
 
 pushd "%~dp0"
-echo %~dp0
 
-C:\Applics\7-zip\7z.exe x APP_64.7z -oc:\Applics\Cockpit\ -aoa
-IF %ERRORLEVEL% NEQ 0 (GOTO endError)
+echo ARG0=%~dp0
+echo ARG1=%1
+echo ARG2=%~2
 
-rem C:\Applics\Cockpit\HAL\server\apache-karaf-4.2.7\bin\contrib\HAL.exe install
-rem IF %ERRORLEVEL% NEQ 0 (GOTO endError)
-
-rem C:\Applics\Cockpit\HAL\server\apache-karaf-4.2.7\bin\contrib\HAL.exe start
-rem IF %ERRORLEVEL% NEQ 0 (GOTO endError)
+IF "%~1" == "32BIT" (
+	echo UNZIP 32BIT
+	echo C:\Applics\7-zip\7z.exe x HAL_32.7z -oc:\Applics\Cockpit\ -aoa
+) ELSE (
+	echo UNZIP 64BIT
+	echo C:\Applics\7-zip\7z.exe x HAL_64.7z -oc:\Applics\Cockpit\ -aoa
+)
 
 :endOk
 EXIT /b 0

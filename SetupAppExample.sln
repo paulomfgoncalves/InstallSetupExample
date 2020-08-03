@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstallUtils", "InstallUtil
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "APP64_Setup", "AppSetup64\AppSetup64.vdproj", "{22D27C03-A464-415F-932E-FA40D7F886EA}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{36CF2704-1DBC-44E7-B1F4-2D64B7AC9CEC}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "APP32_Setup", "AppSetup32\AppSetup32.vdproj", "{46430CE8-CC7F-45E9-989A-E1C4FD5CA13D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,8 +23,10 @@ Global
 		{22D27C03-A464-415F-932E-FA40D7F886EA}.Debug|Any CPU.Build.0 = Debug
 		{22D27C03-A464-415F-932E-FA40D7F886EA}.Release|Any CPU.ActiveCfg = Release
 		{22D27C03-A464-415F-932E-FA40D7F886EA}.Release|Any CPU.Build.0 = Release
-		{36CF2704-1DBC-44E7-B1F4-2D64B7AC9CEC}.Debug|Any CPU.ActiveCfg = Debug
-		{36CF2704-1DBC-44E7-B1F4-2D64B7AC9CEC}.Release|Any CPU.ActiveCfg = Release
+		{46430CE8-CC7F-45E9-989A-E1C4FD5CA13D}.Debug|Any CPU.ActiveCfg = Debug
+		{46430CE8-CC7F-45E9-989A-E1C4FD5CA13D}.Debug|Any CPU.Build.0 = Debug
+		{46430CE8-CC7F-45E9-989A-E1C4FD5CA13D}.Release|Any CPU.ActiveCfg = Release
+		{46430CE8-CC7F-45E9-989A-E1C4FD5CA13D}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -27,20 +27,20 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_4E7CC739469E461F9E931572F4A6E287"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_61D4F2C67D6E4354B889A7BD66EC4CAD"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_6CF0309405C3436CBB0F1A343A0163F9"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_780C280C9E3B4670A1B46740579AAC7E"
-        "OwnerKey" = "8:_6CF0309405C3436CBB0F1A343A0163F9"
+        "OwnerKey" = "8:_4E7CC739469E461F9E931572F4A6E287"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -64,7 +64,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6CF0309405C3436CBB0F1A343A0163F9"
+        "OwnerKey" = "8:_4E7CC739469E461F9E931572F4A6E287"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -143,10 +143,10 @@
             {
             "Name" = "8:Primary output from InstallUtils (Active)"
             "Condition" = "8:"
-            "Object" = "8:_6CF0309405C3436CBB0F1A343A0163F9"
+            "Object" = "8:"
             "FileType" = "3:2"
             "InstallAction" = "3:3"
-            "Arguments" = "8:ROLLBACK \"[TARGETDIR]\""
+            "Arguments" = "8:ROLLBACK 64BIT \"[TARGETDIR]\""
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
             "Identifier" = "8:_052AFB1F_DDA0_4804_838A_4D6EE1521913"
@@ -158,10 +158,10 @@
             {
             "Name" = "8:Primary output from InstallUtils (Active)"
             "Condition" = "8:"
-            "Object" = "8:_6CF0309405C3436CBB0F1A343A0163F9"
+            "Object" = "8:"
             "FileType" = "3:2"
             "InstallAction" = "3:2"
-            "Arguments" = "8:COMMIT \"[TARGETDIR]\""
+            "Arguments" = "8:COMMIT 64BIT \"[TARGETDIR]\""
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
             "Identifier" = "8:_C8249B66_63AC_4CF9_9F52_F586B726EE63"
@@ -173,10 +173,10 @@
             {
             "Name" = "8:Primary output from InstallUtils (Active)"
             "Condition" = "8:"
-            "Object" = "8:_6CF0309405C3436CBB0F1A343A0163F9"
+            "Object" = "8:"
             "FileType" = "3:2"
             "InstallAction" = "3:4"
-            "Arguments" = "8:UNINSTALL \"[TARGETDIR]\""
+            "Arguments" = "8:UNINSTALL 64BIT \"[TARGETDIR]\""
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
             "Identifier" = "8:_13006E90_6BFB_4735_810D_6B4224D328F6"
@@ -188,10 +188,10 @@
             {
             "Name" = "8:Primary output from InstallUtils (Active)"
             "Condition" = "8:"
-            "Object" = "8:_6CF0309405C3436CBB0F1A343A0163F9"
+            "Object" = "8:"
             "FileType" = "3:2"
             "InstallAction" = "3:1"
-            "Arguments" = "8:INSTALL \"[TARGETDIR]\""
+            "Arguments" = "8:INSTALL 64BIT \"[TARGETDIR]\""
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
             "Identifier" = "8:_7C44DF2F_9DF3_43A5_BD6B_0B2B6756D07D"
@@ -408,7 +408,7 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:APP64_Setup"
+        "ProductName" = "8:COMMIT 64BIT \"[TARGETDIR]\""
         "ProductCode" = "8:{B5139F9D-728E-4663-9C70-86DE88528988}"
         "PackageCode" = "8:{67C2EAF7-E728-4939-9AA7-98ED732199E7}"
         "UpgradeCode" = "8:{531290F7-4008-4B33-9BD3-6F40314EBF41}"
@@ -929,7 +929,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_6CF0309405C3436CBB0F1A343A0163F9"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_4E7CC739469E461F9E931572F4A6E287"
             {
             "SourcePath" = "8:..\\InstallUtils\\obj\\Release\\InstallUtils.exe"
             "TargetName" = "8:"

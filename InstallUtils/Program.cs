@@ -10,15 +10,16 @@ namespace InstallUtils
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("'UtilInstall' Started.");
+            Console.WriteLine("'Install-Util' Started.");
 
             try
             {
-                if (args.Length != 2)
-                    throw new Exception("Invalid params.");
+                if (args.Length != 3)
+                    throw new Exception("Invalid parameters.");
 
-                string action = args[0];
-                string targetDir = args[1].Replace("\"", ""); ;
+                string action = args[0].ToUpper();
+                string arqOS = args[1].ToUpper();
+                string targetDir = args[2].Replace("\"", ""); ;
                 string batchFile = "";
 
                 switch (action)
@@ -44,10 +45,10 @@ namespace InstallUtils
 
                 // RUN EXTERNAL PROGRAM //
                 Process process = new Process();
+                process.StartInfo.Arguments = arqOS + " \"" + targetDir + "\"";
                 process.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 process.StartInfo.FileName = Path.Combine(targetDir, batchFile);
 
-                //process.StartInfo.Arguments = "\"" + targetDir + "\"";
                 process.StartInfo.UseShellExecute = false;
                 process.StartInfo.RedirectStandardOutput = true;
                 process.StartInfo.RedirectStandardError = true;
@@ -82,13 +83,13 @@ namespace InstallUtils
             }
             catch (Exception ex)
             {
-                Console.WriteLine("'UtilInstall' ERROR: {0}", ex.Message);
-                    Thread.Sleep(15000);
+                Console.WriteLine("'Install-Util' ERROR: {0}", ex.Message);
+                Thread.Sleep(15000);
                 Environment.Exit(1);
             }
 
-            Console.WriteLine("'UtilInstall' Finished SUCCESSFULLY.");
-                Thread.Sleep(15000);
+            Console.WriteLine("'Install-Util' Finished SUCCESSFULLY.");
+            Thread.Sleep(3000);
             Environment.Exit(0);
         }
 

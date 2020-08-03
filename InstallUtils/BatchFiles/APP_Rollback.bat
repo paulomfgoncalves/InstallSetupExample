@@ -1,8 +1,19 @@
 
-echo ROLLBACK APP
+echo OFF
+echo APP ROLLBACK
 
 pushd "%~dp0"
-echo %~dp0
+
+echo ARG0=%~dp0
+echo ARG1=%1
+echo ARG2=%~2
+
+IF "%~1" == "32BIT" (
+	echo USING 32BIT
+) ELSE (
+	echo UNSING 64BIT
+)
+
 
 rem C:\Applics\Cockpit\HAL\server\apache-karaf-4.2.7\bin\karaf stop
 rem IF %ERRORLEVEL% NEQ 0 (GOTO endError)
